@@ -29,7 +29,7 @@
         .banner {
             width: 100%;
             height: 140px;
-            background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80');
+            background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd7fbe?auto=format&fit=crop&w=600&q=80');
             background-size: cover;
             background-position: center;
         }
@@ -44,7 +44,21 @@
         }
         .content { padding: 20px 24px 30px; }
         h1 { font-size: 1.45rem; color: #0f172a; font-weight: 700; margin-bottom: 4px; }
-        .subtitle { font-size: 0.9rem; color: #64748b; margin-bottom: 24px; }
+        .subtitle { font-size: 0.9rem; color: #64748b; margin-bottom: 20px; }
+        
+        /* Sección de Banco */
+        .bank-box {
+            background: #f8fafc;
+            border: 2px dashed #cbd5e1;
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 24px;
+            text-align: left;
+        }
+        .bank-box h3 { font-size: 0.95rem; color: #0f172a; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+        .bank-data { font-size: 0.85rem; color: #334155; line-height: 1.5; font-family: monospace; }
+        .bank-data strong { color: #0f172a; font-family: sans-serif; }
+
         .btn-group { display: flex; flex-direction: column; gap: 14px; }
         .btn {
             display: flex;
@@ -75,8 +89,19 @@
         <div class="content">
             <h1>Tu Negocio Digital</h1>
             <p class="subtitle">Conecta, paga y comparte en un toque</p>
+            
+            <!-- Recuadro de Datos Bancarios -->
+            <div class="bank-box">
+                <h3>🏦 Datos para Transferencia</h3>
+                <div class="bank-data">
+                    <strong>Banco:</strong> Nombre del Banco<br>Bancomer 
+                    <strong>CLABE:</strong>012 180 01567975408 8 <br>
+                    <strong>Beneficiario:</strong> Edgar Ruiz 
+                </div>
+            </div>
+
             <div class="btn-group">
-                <a href="https://wa.me/525533497852" class="btn btn-pay">💳 Enviar Comprobante / Pago</a>
+                <a href="https://wa.me/525533497852" class="btn btn-pay">📲 Enviar Comprobante por WhatsApp</a>
                 <a href="https://instagram.com" class="btn btn-insta">📸 Catálogo e Instagram</a>
                 <a href="https://google.com" class="btn btn-review">⭐ Califica en Google</a>
                 <a href="https://wa.me/525533497852" class="btn btn-whatsapp">💬 Atención por WhatsApp</a>
